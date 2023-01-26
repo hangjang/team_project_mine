@@ -3,18 +3,13 @@
 @media (max-width:500px){
     /* slider */
     #slider {
-        width: 100%;
-        height: 300px;
-        overflow: hidden;
-        position: relative;
+        width: 100%; 
+        /* overflow: hidden; */
+        padding-top:65px;
     }
 
     #slider video {
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        width:100%;
     }
 
     /* product */
@@ -34,19 +29,20 @@
     .new h2 {
         font-size: 2.5rem;
         text-align: center;
-        /* padding-top: 10px; */
         letter-spacing: 8px;
+        text-indent: 8px;
     }
 
     .new h2:after {
         content: "";
-        width: 270px;
+        width: 272px;
         height: 3px;
         background-color: #c40f39;
         display: block;
         position: absolute;
         top: 6%;
-        left: 17%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .new-text {
@@ -201,20 +197,21 @@
 
     .best-first>h2 {
         font-size: 2.5rem;
-        padding: 35px 0        ;
+        padding: 35px 0;
         letter-spacing: 8px;
+        text-indent: 8px;
     }
 
     .best-first>h2:after {
         content: "";
-        width: 280px;
+        width: 270px;
         height: 3px;
         background-color: #c40f39;
         display: block;
         position: absolute;
         top: 85px;
-        /* left: 480px; */
-        left:15%;
+        left:50%;
+        transform: translateX(-50%);
     }
 
     .best-first>p {
@@ -373,6 +370,7 @@
         padding: 60px 0 50px 0;
         letter-spacing: 8px;
         text-align: center;
+        text-indent: 8px;
     }
 
     .news-all-box h2:after {
@@ -383,7 +381,8 @@
         display: block;
         position: absolute;
         top: 15%;
-        left: 35%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .news-box {
@@ -530,22 +529,22 @@
      */
 }
 
-
 @media (min-width:501px) and (max-width:1399px){
     /* slider */
      #slider {
         width: 100%;
-        height: 780px;
+        /* height: 780px; */
         overflow: hidden;
-        position: relative;
+        /* position: relative; */
+        padding-top:65px;
     }
 
     #slider video {
         width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        /* position: absolute; */
+        /* top: 50%; */
+        /* left: 50%; */
+        /* transform: translate(-50%, -50%); */
     }
 
     /* new arivals */
@@ -567,6 +566,7 @@
         text-align: center;
         padding-top: 10px;
         letter-spacing: 8px;
+        text-indent: 8px;
     }
 
     .new h2:after {
@@ -577,8 +577,8 @@
         display: block;
         position: absolute;
         top: 65px;
-        left: 37.3%;
-        /* left:440px; */
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .new-text {
@@ -736,19 +736,19 @@
         font-size: 3rem;
         padding: 50px 0 30px 0;
         letter-spacing: 8px;
+        text-indent: 8px;
     }
 
     .best-first>h2:after {
         content: "";
-        width: 320px;
+        width: 308px;
         height: 3px;
         background-color: #c40f39;
         display: block;
         position: absolute;
-        /* top: 95px; */
-        top:34.5%;
-        /* left: 480px; */
-        left:36.5%;
+        top:35.5%;
+        left:50%;
+        transform: translateX(-50%);
     }
 
     .best-first>p {
@@ -903,6 +903,7 @@
         padding: 120px;
         letter-spacing: 8px;
         text-align: center;
+        text-indent: 8px;
     }
 
     .news-all-box h2:after {
@@ -912,9 +913,9 @@
         background-color: #c40f39;
         display: block;
         position: absolute;
-        top: 165px;
-        /* left: 577px; */
-        left:45%;
+        top: 175px;
+        left:50%;
+        transform: translateX(-50%);
     }
 
     .news-box {
@@ -1009,7 +1010,7 @@
         position: relative;
     }
 
-    video {
+    #slider video {
         width: 100%;
         position: absolute;
         top: 50%;

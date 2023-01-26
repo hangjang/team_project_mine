@@ -131,34 +131,19 @@ $(function(){
         $(function(){
             $(".monami-left").click(function(){
                 $(".family-wrapbox li:last").prependTo(".family-wrapbox")
-                // $(".family-wrapbox").animate({marginLeft:-331},500);
-                // $(".family-wrapbox").css({'margin-left':'-331','transition':'all 0.3s ease-in-out'});
-               $(".family-wrapbox").animate({marginLeft:"-101%"},800);
+                $(".family-wrapbox").css('margin-left','-50%');
+               $(".family-wrapbox").animate({marginLeft:"0"},850);
             });
 
             $(".monami-right").click(function(){
-                $(".family-wrapbox li:first").appendTo(".family-wrapbox");
-                $(".family-wrapbox").animate({marginLeft:0},800);
+                $(".family-wrapbox").animate({marginLeft:"-50%"},850,function(){
+                    $(".family-wrapbox li:first").appendTo(".family-wrapbox");
+                    $(".family-wrapbox").css('margin-left','0');
+                });
             })
         });
-    }
-        // $('.slide li:last').prependTo('.slide');
-        // $('.slide').css('margin-left',-1000);
-        // $('.slide').stop().animate({marginLeft:0},800);
-        
-        // $('.next').click(function(){
-        // $('.slide').stop().animate({marginLeft:-1000},800, function(){
-        // $('.slide li:first').appendTo('.slide');
-        // $('.slide').css({marginLeft:0});
-        // });
-        // });
-        
-// a태그 하이퍼링크 차단
-    // $(function(){
-    //     $(".family-wrap li a").click(function(e){
-    //         e.preventDefault();
-    //     });
-    // });
+    };
+
 //ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 
 // footer
