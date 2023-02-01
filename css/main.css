@@ -4,96 +4,69 @@
     /* slider */
     #slider {
         width: 100%; 
-        /* overflow: hidden; */
         padding-top:65px;
     }
-
     #slider video {
         width:100%;
     }
 
-    /* product */
+    /* new product */
     #new-allbox {
         width: 100%;
-        height: 840px;
+        height: 1380px;
     }
-
-    .new {
-        width: 100%;
-        height: 840px;
-        margin: 0 auto;
-        position: relative;
-        top: 30px;
-    }
-
-    .new h2 {
+    #new-allbox h2 {
+        height:150px;
         font-size: 2.5rem;
         text-align: center;
         letter-spacing: 8px;
         text-indent: 8px;
+        line-height: 150px;
+        position:relative;
     }
-
-    .new h2:after {
+    #new-allbox h2:after {
         content: "";
         width: 272px;
         height: 3px;
         background-color: #c40f39;
         display: block;
         position: absolute;
-        top: 6%;
+        top: 105px;
         left: 50%;
         transform: translateX(-50%);
     }
-
+    .new {
+        width: 100%;
+        height: 1380px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .new_box{
+        float:left;
+        margin:3%;
+    }
     .new-text {
         margin: 5% 2%;
-        text-align: left;
+        text-align: center;
     }
-
-    .new-text>h3 {
+    .new-text > h3 {
         font-size: 2rem;
     }
-
-    .new-text>p {
+    .new-text >p {
         font-size: 1.5rem;
         padding-top: 5px;
-    }
-
-    .pro_box:hover:after {
-        content: '+';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 5rem;
-        color: #fff;
-        cursor: pointer;
-    }
-
-    .pro_box:hover:before {
-        content: "";
-        width: 16vw;
-        height: 40vh;
-        background-color: #c40f39;
-        opacity: 0.5;
-        position: absolute;
-        top: 0;
-        left: 0;
-        cursor: pointer;
+        display:none;
     }
 
     /* diary */
     .diarybox {
-        width: 16vw;
+        width: 40vw;
         height: 45vh;
-        position: absolute;
-        top: 180px;
-        left:5%;
+        margin-left:30px;
     }
-
     .diary-bg {
-        width: 16vw;
-        height: 40vh;
+        width: 100%;
+        height: 80%;
         display: inline-block;
         background: url(../img/2023diary.png) 50% 50%/cover no-repeat;
         position: relative;
@@ -101,16 +74,13 @@
 
     /* blackbunny */
     .bunnybox {
-        width: 16vw;
+        width: 40vw;
         height: 45vh;
-        position: absolute;
-        top: 280px;
-        left: 24%;
+        margin-top:150px;
     }
-
     .bunny-bg {
-        width: 16vw;
-        height: 40vh;
+        width: 100%;
+        height: 80%;
         display: inline-block;
         background: url(../img/153blackbunny.png) 50% 50%/cover no-repeat;
         position: relative;
@@ -121,16 +91,14 @@
 
     /* hey brother */
     .heybrobox {
-        width: 16vw;
+        width: 40vw;
         height: 45vh;
-        position: absolute;
-        top: 180px;
-        left: 43%;
+        margin-top:-150px;
+        margin-left:30px;
     }
-
     .heybro-bg {
-        width: 16vw;
-        height: 40vh;
+        width: 100%;
+        height: 80%;
         display: inline-block;
         background: url(../img/hey-brother.png) 45% 50%/cover no-repeat;
         position: relative;
@@ -141,16 +109,13 @@
 
     /* 153그리퍼 */
     .grifferbox {
-        width: 16vw;
+        width: 40vw;
         height: 45vh;
-        position: absolute;
-        top: 280px;
-        left: 61.5%;
+        margin-top:-20px;
     }
-
     .griffer-bg {
-        width: 16vw;
-        height: 40vh;
+        width: 100%;
+        height: 80%;
         display: inline-block;
         background: url(../img/153griffer.png) 50% 50%/cover no-repeat;
         position: relative;
@@ -158,16 +123,14 @@
 
     /* 럭키박스 */
     .luckybox {
-        width: 16vw;
-        height: 45vh;
-        position: absolute;
-        top: 180px;
-        left: 80%;
+        width: 40vw;
+        height: 50vh;
+        margin-top:-150px;
+        margin-left:30px;
     }
-
     .lucky-bg {
-        width: 16vw;
-        height: 40vh;
+        width: 100%;
+        height: 80%;
         display: inline-block;
         background: url(../img/luckyset.png) 50% 50%/cover no-repeat;
         position: relative;
@@ -176,32 +139,28 @@
         width:93%;
     }
 
-
     /* best product */
     #best-allbox {
         width: 100%;
         height: 920px;
         background-color: #f1f1f1;
+        clear:both;
     }
-
     .best-first {
         width: 100%;
         height: 280px;
         margin: 0 auto;
         position: relative;
     }
-
     .best-first>h2, .best-first>p {
         text-align: center;
     }
-
     .best-first>h2 {
         font-size: 2.5rem;
         padding: 35px 0;
         letter-spacing: 8px;
         text-indent: 8px;
     }
-
     .best-first>h2:after {
         content: "";
         width: 270px;
@@ -209,11 +168,10 @@
         background-color: #c40f39;
         display: block;
         position: absolute;
-        top: 85px;
+        top: 80px;
         left:50%;
         transform: translateX(-50%);
     }
-
     .best-first>p {
         font-size: 1.5rem;
     }
@@ -225,7 +183,6 @@
         justify-content: center;
         margin: 20px 0;
     }
-
     .penname-list li {
         width: 170px;
         height: 42px;
@@ -234,28 +191,22 @@
         border: 3px solid #ccc;
         cursor: pointer;
     }
-
     .penname-list li a {
         display: inline-block;
         font-size: 1.5rem;
         line-height: 39px;
         color: #222;
     }
-
     .penname-list li a.redtext {
         color: #c40f39;
         font-weight: bold;
     }
-
     .penname-list li.redline {
         border: 3px solid #c40f39;
     }
-
     .item-list {
         width: 100%;
-        /* overflow: hidden; */
     }
-
     .pen-list li:nth-child(8)>a>img {
         height: 419px;
     }
@@ -266,38 +217,31 @@
         margin: 0 35px;
         align-self: flex-start
     }
-
     .pen-list-text p {
         font-size: 1.3rem;
         color: rgb(182, 182, 182);
     }
-
     .pen-list-text h3 {
         font-size: 1.7rem;
     }
-
     .big-text {
         margin: 10px 35px;
     }
-
     .big-text h3 {
         line-height: 27px;
     }
 
-
+    /* swiper */
     .swiper {
         display: none;
         height: 570px;
     }
-
     .swiper-wrapper {
         height: 87%;
     }
-
     .swiper-wrapper>li {
         width: 350px;
     }
-
     .swiper-slide {
         background-color: #fff;
         text-align: center;
@@ -315,7 +259,6 @@
         -ms-flex-align: center;
         -webkit-align-items: center;
     }
-
     .swiper-slide img {
         width: 100%;
         height: 414px;
@@ -324,13 +267,13 @@
     .swiper-pagination{
         bottom:30px;
     }
+
     .arrow {
         width: 100%;
         margin-top: 15px;
         border-top: 2px dotted #ccc;
         position: relative;
     }
-
     .arrowbox {
         width: 100%;
         margin: 0 auto;
@@ -341,11 +284,9 @@
         bottom: -14px;
         left: 0;
     }
-
     .arrowbox i {
         font-size: 3rem;
     }
-
     .center-pointer {
         padding: 0 8px;
         background-color: #f1f1f1;
@@ -358,13 +299,11 @@
         height: 800px;
         border-bottom: 1px solid #ccc;
     }
-
     .news-all-box{
         width:100%;
         margin:0 auto;
         position: relative;
     }
-
     .news-all-box h2 {
         font-size: 3rem;
         padding: 60px 0 50px 0;
@@ -372,7 +311,6 @@
         text-align: center;
         text-indent: 8px;
     }
-
     .news-all-box h2:after {
         content: "";
         width: 117px;
@@ -384,7 +322,6 @@
         left: 50%;
         transform: translateX(-50%);
     }
-
     .news-box {
         width: 100%;
         height: 600px;
@@ -393,17 +330,14 @@
         flex-direction: column;
         justify-content: space-around;
     }
-
     .news-box>div {
         position: relative;
         display:flex;
         justify-content: space-evenly;
     }
-
     #news img {
         width: 45vw;
     }
-
     #news>div>div>div>a:hover:before {
         content: "";
         width: 40vw;
@@ -412,30 +346,25 @@
         position: absolute;
         left: 0;
     }
-
     .news-text {
         width: 45vw;
         /* height: 165px */
     }
-
     .news-text h3 {
         font-size: 1.7rem;
         margin:25px 0 10px 0;
     }
-
     .news-text p {
         font-size: 1.565rem;
         line-height: 18px;
         margin-bottom: 30px;
         display:none;
     }
-
     .news-text a {
         font-size: 1.7rem;
         color: #c40f39;
         font-weight: bold;
     }
-
     .blackrabbit-set p {
         height:90px;
     }
@@ -446,7 +375,6 @@
         margin:0 auto;
         position:relative;
     }
-
     .monami-left, .monami-right{
         font-size:2rem;
         position: absolute;
@@ -459,19 +387,16 @@
         top:38%;
         right:3%;
     }
-
     .family-wrap{
         width:80%;
         height:100px;
         margin:0 auto;
         padding:25px 0;
         overflow: hidden;
-        
     }
     .family-wrapbox{
         width:1000%;
     }
-
     .family-wrapbox li{
         width:4.9%;
         margin-right:5px;
@@ -483,235 +408,25 @@
     .family-wrapbox a>img{
         width:100%
     }
-
-    /* .family-box{
-        display:flex;
-        align-items: center;
-    }
-    #family-wrap{
-        width:382px;
-        height:100px;
-        overflow: hidden;
-    }
-
-    .monami-family {
-        width: 767px;
-        height: 100px;        
-        display:flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-
     .monami-family>a{
         width:182px;
     }
     .monami-family img{
         width:100%;
         border:2px solid #ccc;
-    } */
-
-    /* .family-box {
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-evenly;
     }
-    .family-box>a{
-        width:170px;
-    }
-    .family-box img {
-        width:100%;
-        border: 2px solid #ccc;
-    }
-     */
 }
 
 @media (min-width:501px) and (max-width:1399px){
     /* slider */
      #slider {
         width: 100%;
-        /* height: 780px; */
         overflow: hidden;
-        /* position: relative; */
         padding-top:65px;
     }
-
     #slider video {
         width: 100%;
-        /* position: absolute; */
-        /* top: 50%; */
-        /* left: 50%; */
-        /* transform: translate(-50%, -50%); */
     }
-
-    /* new arivals */
-    #new-allbox {
-        width: 100%;
-        height: 840px;
-    }
-
-    .new {
-        width: 100%;
-        height: 840px;
-        margin: 0 auto;
-        position: relative;
-        top: 40px;
-    }
-
-    .new h2 {
-        font-size: 3rem;
-        text-align: center;
-        padding-top: 10px;
-        letter-spacing: 8px;
-        text-indent: 8px;
-    }
-
-    .new h2:after {
-        content: "";
-        width: 310px;
-        height: 3px;
-        background-color: #c40f39;
-        display: block;
-        position: absolute;
-        top: 65px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .new-text {
-        margin: 5% 2%;
-        text-align: left;
-    }
-
-    .new-text>h3 {
-        font-size: 2rem;
-    }
-
-    .new-text>p {
-        font-size: 1.5rem;
-        padding-top: 5px;
-    }
-
-    .pro_box:hover:after {
-        content: '+';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 5rem;
-        color: #fff;
-        cursor: pointer;
-    }
-
-    .pro_box:hover:before {
-        content: "";
-        width: 16vw;
-        height: 40vh;
-        background-color: #c40f39;
-        opacity: 0.5;
-        position: absolute;
-        top: 0;
-        left: 0;
-        cursor: pointer;
-    }
-
-    /* diary */
-    .diarybox {
-        width: 16vw;
-        height: 45vh;
-        position: absolute;
-        top: 180px;
-        left:5%;
-    }
-
-    .diary-bg {
-        width: 16vw;
-        height: 40vh;
-        display: inline-block;
-        background: url(../img/2023diary.png) 50% 50%/cover no-repeat;
-        position: relative;
-    }
-
-    /* blackbunny */
-    .bunnybox {
-        width: 16vw;
-        height: 45vh;
-        position: absolute;
-        top: 280px;
-        left: 24%;
-    }
-
-    .bunny-bg {
-        width: 16vw;
-        height: 40vh;
-        display: inline-block;
-        background: url(../img/153blackbunny.png) 50% 50%/cover no-repeat;
-        position: relative;
-    }
-    .bunnybox .product-text{
-        width:80%;
-    }
-
-    /* hey brother */
-    .heybrobox {
-        width: 16vw;
-        height: 45vh;
-        position: absolute;
-        top: 180px;
-        left: 43%;
-    }
-
-    .heybro-bg {
-        width: 16vw;
-        height: 40vh;
-        display: inline-block;
-        background: url(../img/hey-brother.png) 45% 50%/cover no-repeat;
-        position: relative;
-    }
-    .heybrobox .product-text p{
-        width:80%;
-    }
-
-    /* 153그리퍼 */
-    .grifferbox {
-        width: 16vw;
-        height: 45vh;
-        position: absolute;
-        top: 280px;
-        left: 61.5%;
-    }
-
-    .griffer-bg {
-        width: 16vw;
-        height: 40vh;
-        display: inline-block;
-        background: url(../img/153griffer.png) 50% 50%/cover no-repeat;
-        position: relative;
-    }
-
-    /* 럭키박스 */
-    .luckybox {
-        width: 16vw;
-        height: 45vh;
-        position: absolute;
-        top: 180px;
-        left: 80%;
-    }
-
-    .lucky-bg {
-        width: 16vw;
-        height: 40vh;
-        display: inline-block;
-        background: url(../img/luckyset.png) 50% 50%/cover no-repeat;
-        position: relative;
-    }
-    .luckybox .product-text{
-        width:93%;
-    }
-
 
     /* best product */
     #best-allbox {
@@ -725,7 +440,6 @@
         height: 280px;
         margin: 0 auto;
         position: relative;
-        /* background: pink; */
     }
 
     .best-first>h2, .best-first>p {
@@ -788,7 +502,6 @@
 
     .item-list {
         width: 100%;
-        /* overflow: hidden; */
     }
 
     .pen-list li:nth-child(8)>a>img {
@@ -818,7 +531,6 @@
     .big-text h3 {
         line-height: 27px;
     }
-
 
     .swiper {
         display: none;
@@ -871,7 +583,8 @@
         align-items: center;
         position: absolute;
         bottom: -14px;
-        left: 30%;
+        left: 50%;
+        transform:translate(-50%, -5%);
     }
 
     .arrowbox i {
@@ -946,12 +659,12 @@
 
     .news-text {
         width: 30vw;
-        height: 165px
     }
 
     .news-text h3 {
         font-size: 1.7rem;
-        margin: 15px 0;
+        margin-top:15px;
+        margin-bottom:5px;
     }
 
     .news-text p {
@@ -964,31 +677,6 @@
         font-size: 1.7rem;
         color: #c40f39;
         font-weight: bold;
-    }
-
-    .blackrabbit-set p {
-        height:90px;
-    }
-
-    #family-box {
-        width: 100%;
-        height: 200px;
-    }
-    #family-box i{
-        display:none;
-    }
-    
-    .family-wrapbox{
-        width: 100%;
-        height: 200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    .family-wrap img {
-        width:250px;
-        border: 2px solid #ccc;
     }
 }
 
@@ -1022,32 +710,37 @@
     #new-allbox {
         width: 100%;
         height: 937px;
+        position:relative;
     }
 
     .new {
         width: 1400px;
-        height: 840px;
+        height: 650px;
         margin: 0 auto;
         position: relative;
-        top: 50px;
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
-    .new h2 {
+    #new-allbox h2 {
         font-size: 3rem;
         text-align: center;
-        padding-top: 45px;
+        padding-top: 100px;
         letter-spacing: 8px;
+        text-indent: 8px;
     }
 
-    .new h2:after {
+    #new-allbox h2:after {
         content: "";
         width: 310px;
         height: 3px;
         background-color: #c40f39;
         display: block;
         position: absolute;
-        top: 100px;
-        left: 542px;
+        top: 155px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .new-text {
@@ -1091,9 +784,6 @@
     .diarybox {
         width: 210px;
         height: 400px;
-        position: absolute;
-        top: 230px;
-        left: 100px;
     }
 
     .diary-bg {
@@ -1108,9 +798,7 @@
     .bunnybox {
         width: 210px;
         height: 400px;
-        position: absolute;
-        top: 330px;
-        left: 350px;
+        align-self: flex-end;
     }
 
     .bunny-bg {
@@ -1129,9 +817,6 @@
     .heybrobox {
         width: 210px;
         height: 400px;
-        position: absolute;
-        top: 230px;
-        left: 600px;
     }
 
     .heybro-bg {
@@ -1146,9 +831,7 @@
     .grifferbox {
         width: 210px;
         height: 400px;
-        position: absolute;
-        top: 330px;
-        left: 850px;
+        align-self: flex-end;
     }
 
     .griffer-bg {
@@ -1163,9 +846,6 @@
     .luckybox {
         width: 210px;
         height: 400px;
-        position: absolute;
-        top: 230px;
-        left: 1100px;
     }
 
     .lucky-bg {
@@ -1250,7 +930,6 @@
 
     .item-list {
         width: 100%;
-        /* overflow: hidden; */
     }
 
     .pen-list li:nth-child(8)>a>img {
@@ -1281,8 +960,7 @@
         line-height: 27px;
     }
 
-
-
+    /* swiper */
     .swiper {
         display: none;
         height: 570px;
@@ -1313,7 +991,6 @@
         -webkit-align-items: center;
         background-color: #fff;
     }
-
     .swiper-slide img {
         width: 100%;
         height: 414px;
@@ -1327,14 +1004,15 @@
     }
 
     .arrowbox {
-        width: 600px;
+        width: 450px;
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
         align-items: center;
         position: absolute;
         bottom: -14px;
-        left: 35%;
+        left: 50%;
+        transform:translate(-50%, -5%);
     }
 
     .arrowbox i {
@@ -1448,6 +1126,370 @@
         align-items: center;
     }
     .family-wrap img {
+        border: 2px solid #ccc;
+    }
+}
+
+
+/* new arrivals 쪼갬 */
+@media (min-width:501px) and (max-width:1068px){
+    /* new arivals */
+    #new-allbox {
+        width: 100%;
+        height: 1090px;
+        position:relative;
+    }
+
+    .new {
+        width: 100%;
+        height: 905px;
+        margin: 0 auto;
+        position: relative;
+        top: 80px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    #new-allbox h2 {
+        font-size: 3rem;
+        text-align: center;
+        padding-top: 100px;
+        letter-spacing: 8px;
+        text-indent: 8px;
+    }
+
+    #new-allbox h2:after {
+        content: "";
+        width: 310px;
+        height: 3px;
+        background-color: #c40f39;
+        display: block;
+        position: absolute;
+        top: 155px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .new-text {
+        margin: 5% 2%;
+        text-align: left;
+    }
+
+    .new-text>h3 {
+        font-size: 2rem;
+    }
+
+    .new-text>p {
+        font-size: 1.5rem;
+        padding-top: 5px;
+    }
+
+    .pro_box:hover:after {
+        content: '+';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 5rem;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .pro_box:hover:before {
+        content: "";
+        width: 100%;
+        height: 300px;
+        background-color: #c40f39;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+    }
+
+    .sizebox{
+        width:30%;
+    }
+    /* diary */
+    .diary-bg {
+        width: 100%;
+        height:300px;
+        display: inline-block;
+        background: url(../img/2023diary.png) 50% 50%/cover no-repeat;
+        position: relative;
+    }
+
+    /* blackbunny */
+    .bunny-bg {
+        width: 100%;
+        height:300px;
+        display: inline-block;
+        background: url(../img/153blackbunny.png) 50% 50%/cover no-repeat;
+        position: relative;
+    }
+    .bunnybox .product-text{
+        width:80%;
+    }
+
+    /* hey brother */
+    .heybro-bg {
+        width: 100%;
+        height:300px;
+        display: inline-block;
+        background: url(../img/hey-brother.png) 45% 50%/cover no-repeat;
+        position: relative;
+    }
+    .heybrobox .product-text p{
+        width:80%;
+    }
+
+    /* 153그리퍼 */
+    .griffer-bg {
+        width :100%;
+        height:300px;
+        display: inline-block;
+        background: url(../img/153griffer.png) 50% 50%/cover no-repeat;
+        position: relative;
+    }
+
+    /* 럭키박스 */
+    .lucky-bg {
+        width: 100%;
+        height:300px;
+        display: inline-block;
+        background: url(../img/luckyset.png) 50% 50%/cover no-repeat;
+        position: relative;
+    }
+    .luckybox .product-text{
+        width:93%;
+    }
+}
+
+@media (min-width:1069px) and (max-width:1399px) {
+
+    /* new arivals */
+    #new-allbox {
+        width: 100%;
+        height: 937px;
+        position: relative;
+    }
+
+    .new {
+        width: 100%;
+        height: 470px;
+        margin: 0 auto;
+        position: relative;
+        top: 115px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    #new-allbox h2 {
+        font-size: 3rem;
+        text-align: center;
+        padding-top: 100px;
+        letter-spacing: 8px;
+        text-indent: 8px;
+    }
+
+    #new-allbox h2:after {
+        content: "";
+        width: 310px;
+        height: 3px;
+        background-color: #c40f39;
+        display: block;
+        position: absolute;
+        top: 155px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .new-text {
+        margin: 5% 2%;
+        text-align: left;
+    }
+
+    .new-text>h3 {
+        font-size: 2rem;
+    }
+
+    .new-text>p {
+        font-size: 1.5rem;
+        padding-top: 5px;
+    }
+
+    .pro_box:hover:after {
+        content: '+';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 5rem;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .pro_box:hover:before {
+        content: "";
+        width: 210px;
+        height: 300px;
+        background-color: #c40f39;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+    }
+
+    /* diary */
+    .diarybox {
+        width: 210px;
+    }
+
+    .diary-bg {
+        width: 210px;
+        height: 300px;
+        display: inline-block;
+        background: url(../img/2023diary.png) 50% 50%/cover no-repeat;
+        position: relative;
+    }
+
+    /* blackbunny */
+    .bunnybox {
+        width: 210px;
+        align-self: center;
+    }
+
+    .bunny-bg {
+        width: 210px;
+        height: 300px;
+        display: inline-block;
+        background: url(../img/153blackbunny.png) 50% 50%/cover no-repeat;
+        position: relative;
+    }
+
+    .bunnybox .product-text {
+        width: 80%;
+    }
+
+    /* hey brother */
+    .heybrobox {
+        width: 210px;
+    }
+
+    .heybro-bg {
+        width: 210px;
+        height: 300px;
+        display: inline-block;
+        background: url(../img/hey-brother.png) 45% 50%/cover no-repeat;
+        position: relative;
+    }
+
+    .heybrobox .product-text p {
+        width: 80%;
+    }
+
+    /* 153그리퍼 */
+    .grifferbox {
+        width: 210px;
+        align-self: center;
+    }
+
+    .griffer-bg {
+        width: 210px;
+        height: 300px;
+        display: inline-block;
+        background: url(../img/153griffer.png) 50% 50%/cover no-repeat;
+        position: relative;
+    }
+
+    /* 럭키박스 */
+    .luckybox {
+        width: 210px;
+    }
+
+    .lucky-bg {
+        width: 210px;
+        height: 300px;
+        display: inline-block;
+        background: url(../img/luckyset.png) 50% 50%/cover no-repeat;
+        position: relative;
+    }
+
+    .luckybox .product-text {
+        width: 93%;
+    }
+}
+
+
+/* 패밀리사이트 쪼갬 */
+@media (min-width:501px) and (max-width:999px){
+    #family-box{
+        width:100%;
+        margin:0 auto;
+        position:relative;
+    }
+    
+    .monami-left, .monami-right{
+        font-size:2rem;
+        position: absolute;
+    }
+    .monami-left{
+        top:38%;
+        left:3%;
+    }
+    .monami-right{
+        top:38%;
+        right:3%;
+    }
+    
+    .family-wrap{
+        width:80%;
+        margin:0 auto;
+        padding:25px 0;
+        overflow: hidden;
+        
+    }
+    .family-wrapbox{
+        width:1000%;
+    }
+    
+    .family-wrapbox li{
+        width:3.27%;
+        margin-right:5px;
+        border:2px solid #ccc;
+        transition: all 0.3s ease-in-out;
+        float:left;
+        display:block;
+    }
+    .family-wrapbox a>img{
+        width:100%
+    }
+}
+
+@media (min-width:1000px) and (max-width:1399px){
+    #family-box {
+        width: 100%;
+        height: 200px;
+    }
+    #family-box i{
+        display:none;
+    }
+    
+    .family-wrapbox{
+        width: 100%;
+        height: 200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .family-wrap img {
+        width:250px;
         border: 2px solid #ccc;
     }
 }

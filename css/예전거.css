@@ -1,0 +1,150 @@
+new arivals
+    #new-allbox {
+        width: 100%;
+        height: 937px;
+        position:relative;
+    }
+
+    .new {
+        width: 100%;
+        height: 470px;
+        margin: 0 auto;
+        position: relative;
+        top: 115px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    #new-allbox h2 {
+        font-size: 3rem;
+        text-align: center;
+        padding-top: 100px;
+        letter-spacing: 8px;
+        text-indent: 8px;
+    }
+
+    #new-allbox h2:after {
+        content: "";
+        width: 310px;
+        height: 3px;
+        background-color: #c40f39;
+        display: block;
+        position: absolute;
+        top: 155px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .new-text {
+        margin: 5% 2%;
+        text-align: left;
+    }
+
+    .new-text>h3 {
+        font-size: 2rem;
+    }
+
+    .new-text>p {
+        font-size: 1.5rem;
+        padding-top: 5px;
+    }
+
+    .pro_box:hover:after {
+        content: '+';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 5rem;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .pro_box:hover:before {
+        content: "";
+        width: 210px;
+        height: 300px;
+        background-color: #c40f39;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+    }
+
+    /* diary */
+    .diarybox {
+        width: 210px;
+    }
+
+    .diary-bg {
+        width: 210px;
+        height:300px;
+        display: inline-block;
+        background: url(../img/2023diary.png) 50% 50%/cover no-repeat;
+        position: relative;
+    }
+
+    /* blackbunny */
+    .bunnybox {
+        width: 210px;
+        align-self: center;
+    }
+
+    .bunny-bg {
+        width: 210px;
+        height:300px;
+        display: inline-block;
+        background: url(../img/153blackbunny.png) 50% 50%/cover no-repeat;
+        position: relative;
+    }
+    .bunnybox .product-text{
+        width:80%;
+    }
+
+    /* hey brother */
+    .heybrobox {
+        width: 210px;
+    }
+
+    .heybro-bg {
+        width: 210px;
+        height:300px;
+        display: inline-block;
+        background: url(../img/hey-brother.png) 45% 50%/cover no-repeat;
+        position: relative;
+    }
+    .heybrobox .product-text p{
+        width:80%;
+    }
+
+    /* 153그리퍼 */
+    .grifferbox {
+        width: 210px;
+        align-self: center;
+    }
+
+    .griffer-bg {
+        width:210px;
+        height:300px;
+        display: inline-block;
+        background: url(../img/153griffer.png) 50% 50%/cover no-repeat;
+        position: relative;
+    }
+
+    /* 럭키박스 */
+    .luckybox {
+        width: 210px;
+    }
+    .lucky-bg {
+        width: 210px;
+        height:300px;
+        display: inline-block;
+        background: url(../img/luckyset.png) 50% 50%/cover no-repeat;
+        position: relative;
+    }
+    .luckybox .product-text{
+        width:93%;
+    }

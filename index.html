@@ -139,9 +139,9 @@
             <video src="img/brand.mp4" autoplay loop muted></video>
         </div>
         <div id="new-allbox">
+            <h2>NEW ARRIVALS</h2>
             <div class="new">
-                <h2>NEW ARRIVALS</h2>
-                <div class="diarybox">
+                <div class="diarybox sizebox new_box">
                     <a href="https://www.monamimall.com/w/product/productDetail.do?goodsNo=MG000023749" target="_blank"
                         class="diary-bg pro_box"></a>
                     <div class="new-text">
@@ -149,7 +149,7 @@
                         <p>2023 다이어리 세트</p>
                     </div>
                 </div>
-                <div class="bunnybox">
+                <div class="bunnybox sizebox new_box">
                     <a href="https://www.monamimall.com/w/product/productDetail.do?goodsNo=MG000023839" target="_blank"
                         class="bunny-bg pro_box"></a>
                     <div class="new-text">
@@ -157,7 +157,7 @@
                         <p>흑토끼의 해 계묘년 맞아 '153 블랙버니'</p>
                     </div>
                 </div>
-                <div class="heybrobox">
+                <div class="heybrobox sizebox new_box">
                     <a href="https://www.musinsa.com/search/musinsa/integration?q=헤이브라더" target="_blank"
                         class="heybro-bg pro_box"></a>
                     <div class="new-text">
@@ -165,7 +165,7 @@
                         <p>헤이, 브라더 프레즌트 에디션</p>
                     </div>
                 </div>
-                <div class="grifferbox">
+                <div class="grifferbox sizebox new_box">
                     <a href="https://www.monamimall.com/w/product/productDetail.do?goodsNo=MG000023883&banner_check=main"
                         target="_blank" class="griffer-bg pro_box"></a>
                     <div class="new-text">
@@ -173,7 +173,7 @@
                         <p>장시간 필기에 적합하게<br> 그립감 개선</p>
                     </div>
                 </div>
-                <div class="luckybox ">
+                <div class="luckybox  sizebox new_box">
                     <a href="https://www.monamimall.com/w/product/productDetail.do?goodsNo=MG000023901" target="_blank"
                         class="lucky-bg pro_box"></a>
                     <div class="new-text">
@@ -538,117 +538,244 @@
         </div>
 
         <script>
-        //Initialize Swiper
-        //인기상품 마우스, 터치 스와이퍼
-            if(window.matchMedia("(max-width:500px)").matches){
-                var swiper = new Swiper(".mySwiper", {
-                    slidesPerView: 1.6,
-                    spaceBetween: 10,
-                    centeredSlides: true,
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true,
-                    }
-                });
-                var swiper1 = new Swiper(".mySwiper1", {
-                    slidesPerView: 1.6,
-                    spaceBetween:  10,
-                    centeredSlides: true,
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true
-                        
-                    }
-                });
-                var swiper2 = new Swiper(".mySwiper2", {
-                    slidesPerView: 1.6,
-                    spaceBetween:  10,
-                    centeredSlides: true,
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true
-                    }
-                });
-                var swiper3 = new Swiper(".mySwiper3", {
-                    slidesPerView: 1.6,
-                    spaceBetween:  10,
-                    centeredSlides: true,
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true
-                    }
-                });
-            }
-            
-            if (window.matchMedia("(min-width:501px) and (max-width:1399px)").matches) {
-                var swiper = new Swiper(".mySwiper", {
-                    slidesPerView: 4.3,
-                    spaceBetween: 20,
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true
-                    }
-                });
-                var swiper1 = new Swiper(".mySwiper1", {
-                    slidesPerView: 4.3,
-                    spaceBetween: 20,
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true
-                    }
-                });
-                var swiper2 = new Swiper(".mySwiper2", {
-                    slidesPerView: 4.3,
-                    spaceBetween: 20,
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true
-                    }
-                });
-                var swiper3 = new Swiper(".mySwiper3", {
-                    slidesPerView: 4.3,
-                    spaceBetween: 20,
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true
-                    }
-                });
-            }
+            //Initialize Swiper
+            //인기상품 마우스, 터치 스와이퍼
 
-            if (window.matchMedia("(min-width:1400px)").matches) {
-                    var swiper = new Swiper(".mySwiper", {
+            // if(window.matchMedia("(max-width:500px)").matches){
+            //     var swiper = new Swiper(".mySwiper", {
+            //         slidesPerView: 1.6,
+            //         spaceBetween: 10,
+            //         centeredSlides: true,
+            //         pagination: {
+            //             el: ".swiper-pagination",
+            //             clickable: true,
+            //         }
+            //     });
+            //     var swiper1 = new Swiper(".mySwiper1", {
+            //         slidesPerView: 1.6,
+            //         spaceBetween:  10,
+            //         centeredSlides: true,
+            //         pagination: {
+            //             el: ".swiper-pagination",
+            //             clickable: true
+
+            //         }
+            //     });
+            //     var swiper2 = new Swiper(".mySwiper2", {
+            //         slidesPerView: 1.6,
+            //         spaceBetween:  10,
+            //         centeredSlides: true,
+            //         pagination: {
+            //             el: ".swiper-pagination",
+            //             clickable: true
+            //         }
+            //     });
+            //     var swiper3 = new Swiper(".mySwiper3", {
+            //         slidesPerView: 1.6,
+            //         spaceBetween:  10,
+            //         centeredSlides: true,
+            //         pagination: {
+            //             el: ".swiper-pagination",
+            //             clickable: true
+            //         }
+            //     });
+            // }
+
+            // if (window.matchMedia("(min-width:501px) and (max-width:1399px)").matches) {
+            //     var swiper = new Swiper(".mySwiper", {
+            //         slidesPerView: 4.3,
+            //         spaceBetween: 20,
+            //         pagination: {
+            //             el: ".swiper-pagination",
+            //             clickable: true
+            //         }
+            //     });
+            //     var swiper1 = new Swiper(".mySwiper1", {
+            //         slidesPerView: 4.3,
+            //         spaceBetween: 20,
+            //         pagination: {
+            //             el: ".swiper-pagination",
+            //             clickable: true
+            //         }
+            //     });
+            //     var swiper2 = new Swiper(".mySwiper2", {
+            //         slidesPerView: 4.3,
+            //         spaceBetween: 20,
+            //         pagination: {
+            //             el: ".swiper-pagination",
+            //             clickable: true
+            //         }
+            //     });
+            //     var swiper3 = new Swiper(".mySwiper3", {
+            //         slidesPerView: 4.3,
+            //         spaceBetween: 20,
+            //         pagination: {
+            //             el: ".swiper-pagination",
+            //             clickable: true
+            //         }
+            //     });
+            // }
+
+            // if (window.matchMedia("(min-width:1400px)").matches) {
+            //         var swiper = new Swiper(".mySwiper", {
+            //             slidesPerView: 5.5,
+            //             spaceBetween: 40,
+            //             pagination: {
+            //                 el: ".swiper-pagination",
+            //                 clickable: true
+            //             }
+            //         });
+            //         var swiper1 = new Swiper(".mySwiper1", {
+            //             slidesPerView: 5.5,
+            //             spaceBetween: 40,
+            //             pagination: {
+            //                 el: ".swiper-pagination",
+            //                 clickable: true
+            //             }
+            //         });
+            //         var swiper2 = new Swiper(".mySwiper2", {
+            //             slidesPerView: 5.5,
+            //             spaceBetween: 40,
+            //             pagination: {
+            //                 el: ".swiper-pagination",
+            //                 clickable: true
+            //             }
+            //         });
+            //         var swiper3 = new Swiper(".mySwiper3", {
+            //             slidesPerView: 5.5,
+            //             spaceBetween: 40,
+            //             pagination: {
+            //                 el: ".swiper-pagination",
+            //                 clickable: true
+            //             }
+            //         });
+            //     }
+
+
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1.6,
+                spaceBetween: 20,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    300:{
+                        centeredSlides: true,
+                        slidesPerView: 1.6,
+                        spaceBetween: 10,
+                    },
+                    501: {
+                        slidesPerView: 1.7,
+                        spaceBetween: 10,
+                    },
+                    800:{
+                        slidesPerView: 3.2,
+                        spaceBetween: 30,
+                    },
+                    1000:{
+                        slidesPerView: 3.7,
+                        spaceBetween: 30,
+                    },
+                    1400: {
                         slidesPerView: 5.5,
                         spaceBetween: 40,
-                        pagination: {
-                            el: ".swiper-pagination",
-                            clickable: true
-                        }
-                    });
-                    var swiper1 = new Swiper(".mySwiper1", {
-                        slidesPerView: 5.5,
-                        spaceBetween: 40,
-                        pagination: {
-                            el: ".swiper-pagination",
-                            clickable: true
-                        }
-                    });
-                    var swiper2 = new Swiper(".mySwiper2", {
-                        slidesPerView: 5.5,
-                        spaceBetween: 40,
-                        pagination: {
-                            el: ".swiper-pagination",
-                            clickable: true
-                        }
-                    });
-                    var swiper3 = new Swiper(".mySwiper3", {
-                        slidesPerView: 5.5,
-                        spaceBetween: 40,
-                        pagination: {
-                            el: ".swiper-pagination",
-                            clickable: true
-                        }
-                    });
+                    }
                 }
+            });
+            var swiper1 = new Swiper(".mySwiper1", {
+                slidesPerView: 1.6,
+                spaceBetween: 20,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    300:{
+                        centeredSlides: true,
+                        slidesPerView: 1.6,
+                        spaceBetween: 10,
+                    },
+                    501: {
+                        slidesPerView: 1.7,
+                        spaceBetween: 10,
+                    },
+                    800:{
+                        slidesPerView: 3.2,
+                        spaceBetween: 30,
+                    },
+                    1000:{
+                        slidesPerView: 3.7,
+                        spaceBetween: 30,
+                    },
+                    1400: {
+                        slidesPerView: 5.5,
+                        spaceBetween: 40,
+                    }
+                }
+            });
+            var swiper2 = new Swiper(".mySwiper2", {
+                slidesPerView: 1.6,
+                spaceBetween: 20,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    300:{
+                        centeredSlides: true,
+                        slidesPerView: 1.6,
+                        spaceBetween: 10,
+                    },
+                    501: {
+                        slidesPerView: 1.7,
+                        spaceBetween: 10,
+                    },
+                    800:{
+                        slidesPerView: 3.2,
+                        spaceBetween: 30,
+                    },
+                    1000:{
+                        slidesPerView: 3.7,
+                        spaceBetween: 30,
+                    },
+                    1400: {
+                        slidesPerView: 5.5,
+                        spaceBetween: 40,
+                    }
+                }
+            });
+            var swiper3 = new Swiper(".mySwiper3", {
+                slidesPerView: 1.6,
+                spaceBetween: 20,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    300:{
+                        centeredSlides: true,
+                        slidesPerView: 1.6,
+                        spaceBetween: 10,
+                    },
+                    501: {
+                        slidesPerView: 1.7,
+                        spaceBetween: 10,
+                    },
+                    800:{
+                        slidesPerView: 3.2,
+                        spaceBetween: 30,
+                    },
+                    1000:{
+                        slidesPerView: 3.7,
+                        spaceBetween: 30,
+                    },
+                    1400: {
+                        slidesPerView: 5.5,
+                        spaceBetween: 40,
+                    }
+                }
+            });
         </script>
 
         <div id="news">

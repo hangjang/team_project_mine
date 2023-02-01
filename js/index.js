@@ -99,24 +99,28 @@ $(function(){
 
         var mHtml = $("html");
         var page = 1;
-        mHtml.animate({ scrollTop: 0 }, 10);
+        mHtml.animate({ scrollTop: 0 }, 1000);
 
         $(window).on("wheel", function (e) {
             if (mHtml.is(":animated")) return;
             if (e.originalEvent.deltaY > 0) {
-                if (page == 5) return;
+                if (page == 5) {
+                    return
+                };
                 page++;
             } else if (e.originalEvent.deltaY < 0) {
-                if (page == 1) return;
+                if (page == 1) {
+                    return
+                };
                 page--;
             }
             var posTop = (page - 1) * $(window).height();
-            mHtml.animate({ scrollTop: posTop }, 550);
+            mHtml.animate({ scrollTop: posTop }, 800);
         });
     }
 
 // 밑부분 family site 네개 박스 호버
-    if(window.matchMedia("(min-width:501px)").matches){
+    if(window.matchMedia("(min-width:1400px)").matches){
         $(function(){
             $('.family-wrapbox li').hover(function(){
                 $(this).children().children().css({"border":"2px solid #c40f39","transition":"all 0.2s ease-in"});
@@ -130,20 +134,37 @@ $(function(){
     if(window.matchMedia("(max-width:500px)").matches){
         $(function(){
             $(".monami-left").click(function(){
-                $(".family-wrapbox li:last").prependTo(".family-wrapbox")
-                $(".family-wrapbox").css('margin-left','-50%');
+                $(".family-wrapbox li:last").prependTo(".family-wrapbox");
+                $(".family-wrapbox li:eq(3)").prependTo(".family-wrapbox");
+                $(".family-wrapbox").css('margin-left','-100%');
                $(".family-wrapbox").animate({marginLeft:"0"},850);
             });
 
             $(".monami-right").click(function(){
-                $(".family-wrapbox").animate({marginLeft:"-50%"},850,function(){
+                $(".family-wrapbox").animate({marginLeft:"-100%"},850,function(){
+                    $(".family-wrapbox li:eq(0), .family-wrapbox li:eq(1)").appendTo(".family-wrapbox");
+                    $(".family-wrapbox").css('margin-left','0');
+                });
+            });
+        });
+    };
+    
+    if(window.matchMedia("(min-width:501px)").matches){
+        $(function(){
+            $(".monami-left").click(function(){
+                $(".family-wrapbox li:last").prependTo(".family-wrapbox")
+                $(".family-wrapbox").css('margin-left','-33.3%');
+               $(".family-wrapbox").animate({marginLeft:"0"},850);
+            });
+
+            $(".monami-right").click(function(){
+                $(".family-wrapbox").animate({marginLeft:"-33.3%"},850,function(){
                     $(".family-wrapbox li:first").appendTo(".family-wrapbox");
                     $(".family-wrapbox").css('margin-left','0');
                 });
-            })
+            });
         });
     };
-
 //ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 
 // footer
